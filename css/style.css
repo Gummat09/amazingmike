@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;1,300&display=swap');
+
+body {
+    font-family: 'Nunito';
+}
+
+
+header {
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+.overlay-gal {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+nav, .ontop {
+    position: relative;
+    z-index: 2;
+}
+
+.link-item, .link-item a {
+    transition: all ease-in-out 300ms;
+}
+
+.link-item:hover, .link-item a:hover {
+    color: #999999;
+}
+
+.image-holder {
+    min-height: 512px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 8px;
+}
+
+.input>input {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid #1e1e1e;
+    outline: none;
+    min-height: 40px;
+    font-size: 16px;
+    color: #999999;
+}
+
+.message-box {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid #1e1e1e;
+    outline: none;
+    min-height: 150px;
+    overflow-y: hidden;
+    color: #999999;
+}
+
+
+@media (max-width: 928px) {
+    .social-icons {
+        display: none;
+    }
+}
